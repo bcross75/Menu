@@ -54,6 +54,14 @@
                 Calories = 80
             };
 
+            var PeanutButterPie = new MenuItem
+            {
+                Name = "Peanut Butter Pie",
+                Description = "It's a chaotic world out there, eat dessert first!",
+                Price = 3.99m,
+                Calories = 400
+            };
+
             var appetizers = new Section("Appetizers");
             appetizers.MenuItems = new MenuItem[] { cinnamonRoll };
 
@@ -66,10 +74,11 @@
             var beverages = new Section("Beverages");
             beverages.MenuItems = new MenuItem[] { coffee, orangeJuice };
 
-            
+            var dessert = new Section("Sweet Treats");
+            dessert.MenuItems = new MenuItem[] { PeanutButterPie };
 
             var menu = new Menu("Luke's Diner");
-            menu.Sections = new Section[] { beverages, appetizers, entree, sides };
+            menu.Sections = new Section[] { beverages, appetizers, entree, sides, dessert };
             menu.Bio = $@"Our Story - Just a small town girl, {Environment.NewLine} living in a lonely world... no wait, 
  that's not it.";
 
