@@ -100,8 +100,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MenuApp\MenuApp.csproj">
-      <Project>{474AD925-834A-4912-87E6-D75C773F35AD}</Project>
+    <ProjectReference Include="..\MenuApp\MenuApp.csproj">
+      <Project>{474ad925-834a-4912-87e6-d75c773f35ad}</Project>
       <Name>MenuApp</Name>
     </ProjectReference>
   </ItemGroup>

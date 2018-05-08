@@ -1,0 +1,15 @@
+﻿@model MenuApp.Models.MenuItemModel
+<h2>Create Menu Item</h2>
+<form id="create" method="post" action="/MenuItem/CreateMenuItem">
+    @Html.Partial("EditMenuItem")
+    <div class="checkbox">
+        <label>
+            @Html.CheckBox("Active", @Model.Active)
+            Active
+        </label>
+    </div>
+    <div class="text-right">
+        <a href="/menu" class="btn btn-default">Cancel</a>
+        <input type="submit" class="btn btn-primary" value="Create Item"/>
+    </div>
+</form>

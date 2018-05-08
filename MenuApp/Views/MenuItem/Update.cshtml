@@ -1,0 +1,15 @@
+﻿@model MenuApp.Models.MenuItemModel
+    <h2>Update Menu Item</h2>
+<form method="post" action="/MenuItem/UpdateMenuItem">
+    @Html.Partial("EditMenuItem")
+    <div class="checkbox">
+        <label>
+            @Html.CheckBox("Active", @Model.Active)
+            Active
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="Update Item"/>
+    </div>
+</form>
+
